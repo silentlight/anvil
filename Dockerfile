@@ -8,6 +8,6 @@ RUN apt-get -y update; \
 RUN curl -L https://foundry.paradigm.xyz | bash
 RUN foundryup
 
-ENTRYPOINT ["anvil", "--host=0.0.0.0"]
+ENTRYPOINT ["anvil", "--host=0.0.0.0", "--disable-block-gas-limit"]
 
 
